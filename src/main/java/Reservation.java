@@ -33,13 +33,13 @@ public class Reservation extends Observable implements Runnable {
     public void run() {
         while(true)
         {
-            //For each animal of type dog, every 2 seconds deducts 4 hours to the last walked time
+            //For each animal of type dog, every 5 seconds deducts 10 hours to the last walked time
             //To simulate the time the dog was last walked passing by
             for (Animal animal : Animals)
             {
                 if (animal instanceof Dog)
                 {
-                    ((Dog) animal).LastWalked.setTime(((Dog) animal).LastWalked.getTime() - 14400000);
+                    ((Dog) animal).LastWalked.setTime(((Dog) animal).LastWalked.getTime() - 36000000);
                     System.out.println(((Dog) animal).toString());
                 }
                 else

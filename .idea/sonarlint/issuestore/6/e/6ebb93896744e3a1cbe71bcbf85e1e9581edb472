@@ -1,0 +1,12 @@
+
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÜîæÝ
+†"squid:ClassVariableVisibilityCheck"UMake NeedsWalk a static final constant or non-public and provide accessors if needed.(Ô¼§äüÿÿÿÿ
+Usquid:UnusedPrivateMethod"2Remove this unused private "setLastWalked" method.(²ê¸ù
+rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(œ±¸Ýþÿÿÿÿ
+osquid:S00116"TRename this field "NeedsWalk" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ô¼§äüÿÿÿÿ
+Tsquid:S1161":Add the "@Override" annotation above this method signature(ñ§òØÿÿÿÿÿ
+Hsquid:UselessParenthesesCheck"!Remove these useless parentheses.(ø¾Ö¿
+‡"squid:ClassVariableVisibilityCheck"VMake LastWalked a static final constant or non-public and provide accessors if needed.(Ø‚ðÝýÿÿÿÿ
+Fsquid:S1172"1Remove this unused method parameter "lastWalked".(²ê¸ù
+psquid:S00116"URename this field "LastWalked" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø‚ðÝýÿÿÿÿ
+Tsquid:UnusedPrivateMethod",Remove this unused private "setDate" method.(³ú¹êùÿÿÿÿ
