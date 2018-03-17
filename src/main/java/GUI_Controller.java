@@ -5,13 +5,12 @@ import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 
+import javax.security.auth.Subject;
+import java.awt.event.ActionListener;
 import java.net.URL;
-import java.util.Date;
-import java.util.Observable;
-import java.util.Observer;
-import java.util.ResourceBundle;
+import java.util.*;
 
-public class GUI_Controller implements Initializable{
+public class GUI_Controller implements Initializable, Observer {
 
     public Button btn_AddAnimal;
     public TextField txt_BadHabits;
@@ -27,18 +26,17 @@ public class GUI_Controller implements Initializable{
 
     public GUI_Controller() {
         reservation.addObserver(new Observer() {
+            @Override
             public void update(Observable o, Object arg) {
-            lv_Info.getItems().clear();
-                for (Animal animal : reservation.GetAnimals())
-                {
-                    lv_Info.getItems().add(animal.getName());
+                System.out.println("Animal Added");
                 }
-            }
         });
     }
 
     public void initialize(URL location, ResourceBundle resources) {
-
+        //Add a listener to the list view controller
+        lv_Info.getSelectionModel().selectedItemProperty().addListener(
+                (v, oldValue, newValue) -> btn_ReserveAnimal.setDisable(newValue == null));
     }
 
     private void RefreshControls()
@@ -48,7 +46,7 @@ public class GUI_Controller implements Initializable{
         {
             lv_Info.getItems().add(animal);
         }
-        //btn_ReserveAnimal.setDisable(lv_Info.getItems() != null);
+        btn_ReserveAnimal.setDisable(lv_Info.getItems() != null);
     }
 
     public void Add(ActionEvent actionEvent) {
@@ -78,5 +76,11 @@ public class GUI_Controller implements Initializable{
             animal.ReservedBy = new Reservor(txt_DisplayName.getText(), new Date());
             this.RefreshControls();
         }
+    }
+
+    @Override
+    public void update(Observable o, Object arg)
+    {
+        System.out.println("Animal has been added");
     }
 }

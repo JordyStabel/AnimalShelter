@@ -16,5 +16,14 @@ public class Main extends Application {
         primaryStage.show();
     }
 
-    public static void main(String[] args) { launch(args); }
+    public static void main(String[] args)
+    {
+        Reservation reservation = new Reservation();
+
+        //Start Run() form the reservation class
+        Thread thread = new Thread(reservation);
+        thread.start();
+
+        launch(args);
+    }
 }
