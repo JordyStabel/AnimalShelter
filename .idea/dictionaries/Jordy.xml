@@ -2,6 +2,7 @@
   <dictionary name="Jordy">
     <words>
       <w>lastwalked</w>
+      <w>milisecond</w>
     </words>
   </dictionary>
 </component>

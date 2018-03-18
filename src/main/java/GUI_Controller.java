@@ -34,7 +34,7 @@ public class GUI_Controller implements Initializable, Observer {
     }
 
     public void initialize(URL location, ResourceBundle resources) {
-        //Add a listener to the list view controller
+        //addNewAnimal a listener to the list view controller
         lv_Info.getSelectionModel().selectedItemProperty().addListener(
                 (v, oldValue, newValue) -> btn_ReserveAnimal.setDisable(newValue == null));
     }
@@ -49,7 +49,7 @@ public class GUI_Controller implements Initializable, Observer {
         btn_ReserveAnimal.setDisable(lv_Info.getItems() != null);
     }
 
-    public void Add(ActionEvent actionEvent) {
+    public void addNewAnimal(ActionEvent actionEvent) {
 
         Gender gender = rb_Male.isSelected() ? Gender.Male : Gender.Female;
 
