@@ -20,7 +20,7 @@ public class Main extends Application {
     {
         Reservation reservation = new Reservation();
 
-        //Start Run() form the reservation class
+        //Starts Run() form the reservation class
         Thread thread = new Thread(reservation);
         thread.start();
 

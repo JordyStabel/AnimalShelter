@@ -1,21 +1,20 @@
 package Animals;
 
 import org.junit.Assert;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class AnimalTest {
+public class AnimalTest {
 
     private Animal animal = new Animal("Ugly Duckling", Gender.Male);
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testConstructor() {
         Assert.assertEquals ("Ugly Duckling", this.animal.AnimalName);
         Assert.assertEquals (Gender.Male, this.animal.Gender);
         Assert.assertNull (this.animal.ReservedBy);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testReservation() {
         Assert.assertNull (this.animal.ReservedBy);
         Assert.assertTrue (this.animal.Reserve("John Doe"));

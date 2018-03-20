@@ -1,14 +1,13 @@
 package Animals;
 
 import org.junit.Assert;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class CatTest {
+public class CatTest {
 
     private Cat cat = new Cat("Ms. Meow", Gender.Female, "Scratches couch");
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testConstructor() {
         Assert.assertEquals ("Ms. Meow", cat.AnimalName);
         Assert.assertEquals (Gender.Female, cat.Gender);
@@ -16,7 +15,7 @@ class CatTest {
         Assert.assertEquals("Scratches couch", cat.BadHabits);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testReservation() {
         Assert.assertNull (cat.ReservedBy);
         Assert.assertTrue (cat.Reserve("John Doe"));

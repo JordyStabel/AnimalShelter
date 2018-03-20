@@ -8,9 +8,11 @@ public class Reservation extends Observable implements Runnable {
 
     public void NewCat(String name, Gender gender, String badHabits)
     {
-        this.Animals.add(new Cat(name, gender, badHabits));
+        Cat cat = new Cat(name, gender, badHabits);
+
+        this.Animals.add(cat);
         setChanged();
-        notifyObservers(GetAnimals());
+        notifyObservers(cat);
     }
 
     public void NewDog(String name, Gender gender)
@@ -41,7 +43,7 @@ public class Reservation extends Observable implements Runnable {
                 }
                 else
                 {
-                    System.out.println("Cat");
+                    //System.out.println("Cat");
                 }
             }
             try

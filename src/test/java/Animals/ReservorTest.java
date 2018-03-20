@@ -1,14 +1,14 @@
 package Animals;
 
 import org.junit.Assert;
+import org.junit.Test;
 
 import java.util.Date;
 
-import static org.junit.jupiter.api.Assertions.*;
 
-class ReservorTest {
+public class ReservorTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void testConstructor() {
         Date reservedAt = new Date();
         Reservor reservor = new Reservor("John Doe", reservedAt);

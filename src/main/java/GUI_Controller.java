@@ -27,9 +27,12 @@ public class GUI_Controller implements Initializable, Observer {
     public GUI_Controller() {
         reservation.addObserver(new Observer() {
             @Override
-            public void update(Observable o, Object arg) {
-                System.out.println("Animal Added");
-                }
+            public void update(Observable o, Object arg)
+            {
+                Animal a = (Animal)arg;
+                lv_Info.getItems().add(a);
+                System.out.println("Animal Added:" + a.AnimalName);
+            }
         });
     }
 
@@ -39,15 +42,15 @@ public class GUI_Controller implements Initializable, Observer {
                 (v, oldValue, newValue) -> btn_ReserveAnimal.setDisable(newValue == null));
     }
 
-    private void RefreshControls()
-    {
-        lv_Info.getItems().clear();
-        for (Animal animal : reservation.Animals)
-        {
-            lv_Info.getItems().add(animal);
-        }
-        btn_ReserveAnimal.setDisable(lv_Info.getItems() != null);
-    }
+//    private void RefreshControls()
+//    {
+//        lv_Info.getItems().clear();
+//        for (Animal animal : reservation.Animals)
+//        {
+//            lv_Info.getItems().add(animal);
+//        }
+//        btn_ReserveAnimal.setDisable(lv_Info.getItems() != null);
+//    }
 
     public void addNewAnimal(ActionEvent actionEvent) {
 
@@ -61,7 +64,7 @@ public class GUI_Controller implements Initializable, Observer {
         {
             reservation.NewDog(txt_InputName.getText(), gender);
         }
-        RefreshControls();
+        //RefreshControls();
     }
 
     public void Changed(ActionEvent actionEvent) {
@@ -74,7 +77,7 @@ public class GUI_Controller implements Initializable, Observer {
         if (animal != null)
         {
             animal.ReservedBy = new Reservor(txt_DisplayName.getText(), new Date());
-            this.RefreshControls();
+            //this.RefreshControls();
         }
     }
 
