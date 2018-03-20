@@ -9,7 +9,7 @@ import java.util.Date;
 public class ReservorTest {
 
     @Test
-    void testConstructor() {
+    public void testConstructor() {
         Date reservedAt = new Date();
         Reservor reservor = new Reservor("John Doe", reservedAt);
         Assert.assertEquals("John Doe", reservor.Name);

@@ -10,7 +10,7 @@ public class DogTest {
     private Dog dog = new Dog("Sgt. Woof", Gender.Male);
 
     @Test
-    void testConstructor() {
+    public void testConstructor() {
         Assert.assertEquals ("Sgt. Woof", dog.AnimalName);
         Assert.assertEquals (Gender.Male, dog.Gender);
         Assert.assertNull (dog.ReservedBy);
@@ -20,7 +20,7 @@ public class DogTest {
     }
 
     @Test
-    void testReservation() {
+    public void testReservation() {
         Assert.assertNull (dog.ReservedBy);
         Assert.assertTrue (dog.Reserve("John Doe"));
         Assert.assertNotNull(dog.ReservedBy);

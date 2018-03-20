@@ -8,14 +8,14 @@ public class AnimalTest {
     private Animal animal = new Animal("Ugly Duckling", Gender.Male);
 
     @Test
-    void testConstructor() {
+    public void testConstructor() {
         Assert.assertEquals ("Ugly Duckling", this.animal.AnimalName);
         Assert.assertEquals (Gender.Male, this.animal.Gender);
         Assert.assertNull (this.animal.ReservedBy);
     }
 
     @Test
-    void testReservation() {
+    public void testReservation() {
         Assert.assertNull (this.animal.ReservedBy);
         Assert.assertTrue (this.animal.Reserve("John Doe"));
         Assert.assertNotNull(this.animal.ReservedBy);

@@ -8,7 +8,7 @@ public class CatTest {
     private Cat cat = new Cat("Ms. Meow", Gender.Female, "Scratches couch");
 
     @Test
-    void testConstructor() {
+    public void testConstructor() {
         Assert.assertEquals ("Ms. Meow", cat.AnimalName);
         Assert.assertEquals (Gender.Female, cat.Gender);
         Assert.assertNull (cat.ReservedBy);
@@ -16,7 +16,7 @@ public class CatTest {
     }
 
     @Test
-    void testReservation() {
+    public void testReservation() {
         Assert.assertNull (cat.ReservedBy);
         Assert.assertTrue (cat.Reserve("John Doe"));
         Assert.assertNotNull(cat.ReservedBy);
