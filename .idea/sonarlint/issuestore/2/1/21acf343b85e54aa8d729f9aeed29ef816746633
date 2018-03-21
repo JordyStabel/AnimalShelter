@@ -1,0 +1,31 @@
+
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ú°à¬
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¿Üô©øÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ó©ƒÿøÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(âÚ÷Žüÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÿéÉ¥øÿÿÿÿ
+…"squid:ClassVariableVisibilityCheck"YMake btn_AddAnimal a static final constant or non-public and provide accessors if needed.(×ÌðÀ
+Š"squid:ClassVariableVisibilityCheck"YMake txt_BadHabits a static final constant or non-public and provide accessors if needed.(£›‡´ûÿÿÿÿ
+"squid:ClassVariableVisibilityCheck"SMake rb_Male a static final constant or non-public and provide accessors if needed.(¹´Ý°
+"squid:ClassVariableVisibilityCheck"UMake rb_Female a static final constant or non-public and provide accessors if needed.(÷º˜÷
+…"squid:ClassVariableVisibilityCheck"YMake txt_InputName a static final constant or non-public and provide accessors if needed.(¹³üž
+‡"squid:ClassVariableVisibilityCheck"VMake cb_Species a static final constant or non-public and provide accessors if needed.(°–Ž¯ùÿÿÿÿ
+„"squid:ClassVariableVisibilityCheck"SMake lv_Info a static final constant or non-public and provide accessors if needed.(Ó¼÷ãýÿÿÿÿ
+Œ"squid:ClassVariableVisibilityCheck"[Make txt_DisplayName a static final constant or non-public and provide accessors if needed.(ºš™ªùÿÿÿÿ
+‰"squid:ClassVariableVisibilityCheck"]Make btn_ReserveAnimal a static final constant or non-public and provide accessors if needed.(³°…
+1squid:S1220""Move this file to a named package.
+csquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ð¢åè
+=squid:S1604"(Make this anonymous inner class a lambda(˜õ¤±
+nsquid:S00116"XRename this field "btn_AddAnimal" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×ÌðÀ
+ssquid:S00116"XRename this field "txt_BadHabits" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£›‡´ûÿÿÿÿ
+hsquid:S00116"RRename this field "rb_Male" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹´Ý°
+jsquid:S00116"TRename this field "rb_Female" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷º˜÷
+nsquid:S00116"XRename this field "txt_InputName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹³üž
+psquid:S00116"URename this field "cb_Species" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°–Ž¯ùÿÿÿÿ
+msquid:S00116"RRename this field "lv_Info" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó¼÷ãýÿÿÿÿ
+usquid:S00116"ZRename this field "txt_DisplayName" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºš™ªùÿÿÿÿ
+rsquid:S00116"\Rename this field "btn_ReserveAnimal" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³°…
+\squid:UselessImportCheck":Remove this unused import 'java.awt.event.ActionListener'.(Ìä¹
+_squid:UselessImportCheck"8Remove this unused import 'javax.security.auth.Subject'.(â†×¦øÿÿÿÿ

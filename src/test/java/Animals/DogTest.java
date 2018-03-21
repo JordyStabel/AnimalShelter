@@ -14,7 +14,6 @@ public class DogTest {
         Assert.assertEquals ("Sgt. Woof", dog.AnimalName);
         Assert.assertEquals (Gender.Male, dog.Gender);
         Assert.assertNull (dog.ReservedBy);
-        //+1 Because it takes 1 milisecond to run the test
         Assert.assertEquals(new Date().getDay(), dog.LastWalked.getDay());
         Assert.assertFalse(dog.NeedsWalk);
     }
