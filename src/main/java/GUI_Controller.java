@@ -5,8 +5,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 
-import javax.security.auth.Subject;
-import java.awt.event.ActionListener;
 import java.net.URL;
 import java.util.*;
 
@@ -29,9 +27,7 @@ public class GUI_Controller implements Initializable, Observer {
             @Override
             public void update(Observable o, Object arg)
             {
-                Animal a = (Animal)arg;
-                lv_Info.getItems().add(a);
-                System.out.println("Animal Added:" + a.AnimalName);
+                refreshControls();
             }
         });
     }
@@ -42,15 +38,15 @@ public class GUI_Controller implements Initializable, Observer {
                 (v, oldValue, newValue) -> btn_ReserveAnimal.setDisable(newValue == null));
     }
 
-//    private void RefreshControls()
-//    {
-//        lv_Info.getItems().clear();
-//        for (Animal animal : reservation.Animals)
-//        {
-//            lv_Info.getItems().add(animal);
-//        }
-//        btn_ReserveAnimal.setDisable(lv_Info.getItems() != null);
-//    }
+    private void refreshControls()
+    {
+        lv_Info.getItems().clear();
+        for (Animal animal : reservation.Animals)
+        {
+            lv_Info.getItems().add(animal);
+        }
+        btn_ReserveAnimal.setDisable(lv_Info.getItems() != null);
+    }
 
     public void addNewAnimal(ActionEvent actionEvent) {
 
@@ -64,7 +60,7 @@ public class GUI_Controller implements Initializable, Observer {
         {
             reservation.NewDog(txt_InputName.getText(), gender);
         }
-        //RefreshControls();
+        //refreshControls();
     }
 
     public void Changed(ActionEvent actionEvent) {
@@ -77,7 +73,7 @@ public class GUI_Controller implements Initializable, Observer {
         if (animal != null)
         {
             animal.ReservedBy = new Reservor(txt_DisplayName.getText(), new Date());
-            //this.RefreshControls();
+            //this.refreshControls();
         }
     }
 

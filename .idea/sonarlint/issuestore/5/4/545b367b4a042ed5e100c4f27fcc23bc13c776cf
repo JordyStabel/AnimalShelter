@@ -1,0 +1,5 @@
+
+"squid:ClassVariableVisibilityCheck"UMake BadHabits a static final constant or non-public and provide accessors if needed.(¦Ú¹Ú
+rsquid:S00120"WRename this package name to match the regular expression '^[a-z]+(\.[a-z][a-z0-9]*)*$'.(œ±¸İşÿÿÿÿ
+Tsquid:UnusedPrivateMethod"1Remove this unused private "setBadHabits" method.(Ïù“
+jsquid:S00116"TRename this field "BadHabits" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦Ú¹Ú

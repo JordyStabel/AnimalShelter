@@ -25,6 +25,17 @@
             <artifactId>junit</artifactId>
             <version>RELEASE</version>
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.junit.jupiter</groupId>-->
+            <!--<artifactId>junit-jupiter-api</artifactId>-->
+            <!--<version>RELEASE</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>AnimalShelterConversion</groupId>-->
+            <!--<artifactId>AnimalShelter</artifactId>-->
+            <!--<version>1.0-SNAPSHOT</version>-->
+            <!--<scope>test</scope>-->
+        <!--</dependency>-->
     </dependencies>
 
 
